@@ -1,56 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Teddy Shop - Products</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Our Teddy Bears</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Teddy Bears</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<div class="products">
+  <div class="product-card">
+    <img src="https://i.ibb.co/HC7xg7K/brown-teddy.jpg" alt="Brown Teddy">
+    <h3>Classic Brown Teddy</h3>
+    <p>$25</p>
+    <button onclick="addToCart('Classic Brown Teddy', 25)">Add to Cart</button>
+  </div>
 
-  <main>
-    <h2>Pick Your Favorite Teddy</h2>
-    <div class="products">
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1587731556938-38755b4803a6?auto=format&fit=crop&w=400&q=80" alt="Brown Teddy">
-        <h3>Classic Brown Teddy</h3>
-        <p>$25</p>
-        <button onclick="addToCart('Classic Brown Teddy', 25)">Add to Cart</button>
-      </div>
+  <div class="product-card">
+    <img src="https://i.ibb.co/fD6Z9kb/pink-teddy.jpg" alt="Pink Teddy">
+    <h3>Pink Teddy</h3>
+    <p>$30</p>
+    <button onclick="addToCart('Pink Teddy', 30)">Add to Cart</button>
+  </div>
 
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1615634260160-bb15473bb5a2?auto=format&fit=crop&w=400&q=80" alt="Pink Teddy">
-        <h3>Pink Teddy</h3>
-        <p>$30</p>
-        <button onclick="addToCart('Pink Teddy', 30)">Add to Cart</button>
-      </div>
+  <div class="product-card">
+    <img src="https://i.ibb.co/R2Tbxns/white-teddy.jpg" alt="White Teddy">
+    <h3>Fluffy White Teddy</h3>
+    <p>$35</p>
+    <button onclick="addToCart('Fluffy White Teddy', 35)">Add to Cart</button>
+  </div>
 
-      <div class="product-card">
-        <img src="https://images.unsplash.com/photo-1601758124095-1e31e49c7f19?auto=format&fit=crop&w=400&q=80" alt="White Teddy">
-        <h3>Fluffy White Teddy</h3>
-        <p>$35</p>
-        <button onclick="addToCart('Fluffy White Teddy', 35)">Add to Cart</button>
-      </div>
-    </div>
-
-   <h2>Your Cart</h2>
-<ul id="cart"></ul>
-<p id="total">Total: $0</p>
-<button id="clearCart" onclick="clearCart()" style="display:none;">🗑️ Clear Cart</button>
-
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Teddy Shop</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="product-card">
+    <img src="https://i.ibb.co/wg8hRpb/red-teddy.jpg" alt="Red Heart Teddy">
+    <h3>Red Heart Teddy</h3>
+    <p>$40</p>
+    <button onclick="addToCart('Red Heart Teddy', 40)">Add to Cart</button>
+  </div>
+</div>
