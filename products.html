@@ -2,41 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shopping Site - Products</title>
+  <title>Teddy Shop - Products</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Our Products</h1>
+    <h1>Our Teddy Bears</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
+      <a href="products.html">Teddy Bears</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h2>Available Items</h2>
+    <h2>Pick Your Favorite Teddy</h2>
     <div class="products">
       <div class="product-card">
-        <img src="https://via.placeholder.com/150?text=Handbag" alt="Handbag">
-        <h3>Handbag</h3>
-        <p>$49</p>
-        <button onclick="addToCart('Handbag', 49)">Add to Cart</button>
+        <img src="https://images.unsplash.com/photo-1587731556938-38755b4803a6?auto=format&fit=crop&w=400&q=80" alt="Brown Teddy">
+        <h3>Classic Brown Teddy</h3>
+        <p>$25</p>
+        <button onclick="addToCart('Classic Brown Teddy', 25)">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/150?text=Sneakers" alt="Sneakers">
-        <h3>Sneakers</h3>
-        <p>$79</p>
-        <button onclick="addToCart('Sneakers', 79)">Add to Cart</button>
+        <img src="https://images.unsplash.com/photo-1615634260160-bb15473bb5a2?auto=format&fit=crop&w=400&q=80" alt="Pink Teddy">
+        <h3>Pink Teddy</h3>
+        <p>$30</p>
+        <button onclick="addToCart('Pink Teddy', 30)">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <img src="https://via.placeholder.com/150?text=Watch" alt="Watch">
-        <h3>Watch</h3>
-        <p>$99</p>
-        <button onclick="addToCart('Watch', 99)">Add to Cart</button>
+        <img src="https://images.unsplash.com/photo-1601758124095-1e31e49c7f19?auto=format&fit=crop&w=400&q=80" alt="White Teddy">
+        <h3>Fluffy White Teddy</h3>
+        <p>$35</p>
+        <button onclick="addToCart('Fluffy White Teddy', 35)">Add to Cart</button>
       </div>
     </div>
 
@@ -46,30 +46,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 My Shopping Site</p>
+    <p>&copy; 2025 Teddy Shop</p>
   </footer>
 
-  <script>
-    let cart = [];
-    let total = 0;
-
-    function addToCart(item, price) {
-      cart.push({ item, price });
-      total += price;
-
-      const cartList = document.getElementById("cart");
-      const newItem = document.createElement("li");
-      newItem.textContent = item + " - $" + price;
-      cartList.appendChild(newItem);
-
-      document.getElementById("total").textContent = "Total: $" + total;
-    }
-  </script>
-</body>
-</html>
-
-  <footer>
-    <p>&copy; 2025 My Shopping Site</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
