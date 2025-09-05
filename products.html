@@ -1,4 +1,28 @@
-<div class="products">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teddy Shop - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    background: #ffe7d1; /* light teddy brown for products */
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Our Teddy Bears</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Teddy Bears</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Pick Your Favorite Teddy</h2>
+   <div class="products">
   <div class="product-card">
     <img src="https://i.ibb.co/HC7xg7K/brown-teddy.jpg" alt="Brown Teddy">
     <h3>Classic Brown Teddy</h3>
@@ -27,8 +51,18 @@
     <button onclick="addToCart('Red Heart Teddy', 40)">Add to Cart</button>
   </div>
 </div>
-<style>
-  body {
-    background: #ffe7d1; /* light teddy brown for products */
-  }
-</style>
+
+<h2>Your Cart</h2>
+<ul id="cart"></ul>
+<p id="total">Total: $0</p>
+<button id="clearCart" onclick="clearCart()" style="display:none;">🗑️ Clear Cart</button>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Teddy Shop</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
