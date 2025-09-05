@@ -2,17 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Teddy Shop - Contact</title>
+  <title>Teddy Shop - Products</title>
+  <!-- ✅ Make sure style.css is in the same folder as this file -->
   <link rel="stylesheet" href="style.css">
-   <style>
-  body {
-    background:#fce4ec; 
-  }
-</style>
+  <style>
+    body {
+      background: #ffe7d1; /* Light teddy brown background for product page */
+      text-align: center;  /* Keep everything centered */
+      margin: 0;           /* Remove default spacing */
+    }
+  </style>
 </head>
 <body>
+  <!-- ✅ Header should now show properly -->
   <header>
-    <h1>Contact Teddy Shop</h1>
+    <h1>Welcome to Teddy Shop</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="products.html">Teddy Bears</a>
@@ -21,25 +25,42 @@
   </header>
 
   <main>
-    <h2>We’d love to hear from you!</h2>
-    <form>
-      <label>Name:</label><br>
-      <input type="text" placeholder="Enter your name"><br><br>
+    <h2>Pick Your Favorite Teddy 🧸</h2>
 
-      <label>Email:</label><br>
-      <input type="email" placeholder="Enter your email"><br><br>
+    <div class="products">
+      <div class="product-card">
+        <img src="https://i.ibb.co/HC7xg7K/brown-teddy.jpg" alt="Brown Teddy">
+        <h3>Classic Brown Teddy</h3>
+        <p>$25</p>
+        <button onclick="addToCart('Classic Brown Teddy', 25)">Add to Cart</button>
+      </div>
 
-      <label>Message:</label><br>
-      <textarea placeholder="Type your message"></textarea><br><br>
+      <div class="product-card">
+        <img src="https://i.ibb.co/fD6Z9kb/pink-teddy.jpg" alt="Pink Teddy">
+        <h3>Pink Teddy</h3>
+        <p>$30</p>
+        <button onclick="addToCart('Pink Teddy', 30)">Add to Cart</button>
+      </div>
 
-      <button type="submit">Send</button>
-    </form>
+      <div class="product-card">
+        <img src="https://i.ibb.co/R2Tbxns/white-teddy.jpg" alt="White Teddy">
+        <h3>Fluffy White Teddy</h3>
+        <p>$35</p>
+        <button onclick="addToCart('Fluffy White Teddy', 35)">Add to Cart</button>
+      </div>
 
-    <h2>Your Cart</h2>
-<ul id="cart"></ul>
-<p id="total">Total: $0</p>
-<button id="clearCart" onclick="clearCart()" style="display:none;">🗑️ Clear Cart</button>
+      <div class="product-card">
+        <img src="https://i.ibb.co/wg8hRpb/red-teddy.jpg" alt="Red Heart Teddy">
+        <h3>Red Heart Teddy</h3>
+        <p>$40</p>
+        <button onclick="addToCart('Red Heart Teddy', 40)">Add to Cart</button>
+      </div>
+    </div>
 
+    <h2>Your Cart 🛒</h2>
+    <ul id="cart"></ul>
+    <p id="total">Total: $0</p>
+    <button id="clearCart" onclick="clearCart()" style="display:none;">🗑️ Clear Cart</button>
   </main>
 
   <footer>
@@ -47,11 +68,5 @@
   </footer>
 
   <script src="script.js"></script>
-</body>
-</html>
-
-  <footer>
-    <p>&copy; 2025 My Shopping Site</p>
-  </footer>
 </body>
 </html>
