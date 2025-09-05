@@ -1,27 +1,27 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Function to add items to cart
+// Add item to cart
 function addToCart(item, price) {
   cart.push({ item, price });
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
 
-// Function to remove an item by index
+// Remove item from cart
 function removeFromCart(index) {
   cart.splice(index, 1);
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
 
-// Function to clear the cart
+// Clear entire cart
 function clearCart() {
   cart = [];
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart();
 }
 
-// Function to render cart
+// Render cart on page
 function renderCart() {
   const cartList = document.getElementById("cart");
   const totalElement = document.getElementById("total");
@@ -35,7 +35,7 @@ function renderCart() {
   cart.forEach((c, index) => {
     const newItem = document.createElement("li");
     newItem.innerHTML = `
-      ${c.item} - $${c.price} 
+      ${c.item} - $${c.price}
       <button class="remove-btn" onclick="removeFromCart(${index})">❌ Remove</button>
     `;
     cartList.appendChild(newItem);
@@ -43,10 +43,8 @@ function renderCart() {
   });
 
   totalElement.textContent = "Total: $" + total;
-
-  // Show or hide the clear cart button
   clearButton.style.display = cart.length > 0 ? "inline-block" : "none";
 }
 
-// Render cart on page load
+// Load cart when page opens
 window.onload = renderCart;
