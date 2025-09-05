@@ -28,24 +28,27 @@ nav a {
 
 .products {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;        /* allows items to move to next row */
+  justify-content: center; /* centers the row */
+  gap: 20px;              /* space between cards */
   margin-top: 20px;
 }
 
 .product-card {
+  flex: 0 0 200px;        /* fixed width for each card */
   border: 2px solid #ddd;
   border-radius: 15px;
   padding: 15px;
-  width: 200px;
   background: #fff;
+  text-align: center;
 }
 
 .product-card img {
   width: 100%;
+  height: auto;
   border-radius: 10px;
 }
+
 
 button {
   background: #28a745;
