@@ -1,27 +1,152 @@
-#clearCart {
-  background: #ff9800;
+/* General */
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff7f0;
+  color: #4b2e2e;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #d98f5f, #f5c6aa);
+  color: white;
+  padding: 1.2rem;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Main Content */
+main {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Banner */
+.banner {
+  margin-top: 20px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+}
+
+/* Products */
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  width: 230px;
+  transition: transform 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #5a2e2e;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Buttons */
+button {
+  background: #a0522d;
   color: white;
   border: none;
-  padding: 8px 12px;
-  margin-top: 10px;
+  padding: 8px 14px;
+  margin-top: 8px;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #7a3f23;
+}
+
+.remove-btn {
+  background: #dc3545;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.remove-btn:hover {
+  background: #a71d2a;
+}
+
+#clearCart {
+  background: #ff9800;
+  padding: 8px 14px;
+  margin-top: 12px;
 }
 
 #clearCart:hover {
   background: #e68900;
 }
-.remove-btn {
-  background: #dc3545;
-  color: white;
-  border: none;
-  padding: 4px 8px;
-  margin-left: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 12px;
+
+/* Cart */
+#cart {
+  list-style: none;
+  padding: 0;
 }
 
-.remove-btn:hover {
-  background: #b02a37;
+#cart li {
+  margin: 6px 0;
+  font-size: 1rem;
+  background: #ffe7d1;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* Footer */
+footer {
+  background: #4b2e2e;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 30px;
 }
